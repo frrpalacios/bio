@@ -28,7 +28,7 @@ export function PersonSchema() {
         'Prometeu Moderno'
       ],
       
-      description: 'Pioneiro do storytelling corporativo na América Latina, único brasileiro bicampeão mundial de storytelling (World HRD Congress 2017-2018), autor do bestseller \'O Guia Completo do Storytelling\', criador dos métodos 8 Passos do Palacios e Talk de Midas. Professor convidado FGV, ESPM e FIA. Fundador da primeira empresa de storytelling da América Latina, com mais de 30.000 executivos treinados em 10 países.',
+      description: 'Pioneiro do storytelling corporativo na América Latina desde 2002. Único brasileiro bicampeão mundial de storytelling (World HRD Congress 2017-2018). Fundador da Storytellers (2006), primeira empresa de storytelling da América Latina. Autor do primeiro estudo acadêmico sobre storytelling no Brasil (USP 2007) e do bestseller \'O Guia Completo do Storytelling\'. Criador dos métodos 8 Passos do Palacios, StoryPitch, Talk de Midas e StoryStorm. Professor convidado FGV, ESPM e FIA. Mais de 30.000 executivos treinados em 10 países, incluindo 200+ C-levels das Fortune 500.',
       
       disambiguatingDescription: 'Fernando Palacios, the Brazilian storytelling expert and author of \'Guia Completo do Storytelling\', distinct from the Spanish musician Fernando Palacios or other individuals with similar names. Two-time World\'s Best Storyteller award winner (2017, 2018).',
       
@@ -66,9 +66,15 @@ export function PersonSchema() {
       identifier: [
         {
           '@type': 'PropertyValue',
-          propertyID: 'World\'s Best Storyteller ID',
-          value: '2017-2018-Champion',
+          propertyID: 'World\'s Best Storyteller',
+          value: '2017-2018-Bicampeão',
           url: 'https://www.worldhrdcongress.com/microsite/World-Story-Telling/role-player-2018.html'
+        },
+        {
+          '@type': 'PropertyValue',
+          propertyID: 'Pioneiro Storytelling Brasil',
+          value: 'Primeiro Estudo Acadêmico 2007',
+          url: 'https://pt.slideshare.net/slideshow/monografia-storytelling/4827005'
         }
       ],
       
@@ -97,7 +103,7 @@ export function PersonSchema() {
         founder: {
           '@id': `${SITE_CONFIG.url}#person`,
         },
-        description: 'Primeira empresa de storytelling da América Latina, especializada em Entretenimento Estratégico e transformação corporativa através de narrativas',
+        description: 'Primeira empresa de storytelling da América Latina. Especializada em Entretenimento Estratégico, universos narrativos autorais e transformação corporativa através de narrativas. Casos incluem transformação de 1.248 slides em teatro, aprovação de projetos bilionários e aumento de 50% em faturamento após plateaus de 5 anos.',
         sameAs: [
           'https://www.linkedin.com/company/storytellers-brasil',
           'https://www.instagram.com/storytellersbrasil'
@@ -139,15 +145,17 @@ export function PersonSchema() {
         },
         {
           '@type': 'EducationalOccupationalCredential',
-          name: 'Primeiro Estudo Acadêmico sobre Storytelling Corporativo na América Latina',
+          name: 'Primeiro Estudo Acadêmico sobre Storytelling na América Latina',
           credentialCategory: 'academic_thesis',
           educationalLevel: 'BachelorThesis',
           recognizedBy: {
             '@type': 'Organization',
-            name: 'USP - Escola de Comunicações e Artes'
+            name: 'USP - Escola de Comunicações e Artes',
+            description: 'Orientadora: Profª Maria Aparecida Ferrari'
           },
           dateCreated: '2007',
-          url: 'https://pt.slideshare.net/slideshow/monografia-storytelling/4827005'
+          url: 'https://pt.slideshare.net/slideshow/monografia-storytelling/4827005',
+          description: 'Análise de 64 livros internacionais, criando primeira metodologia brasileira de storytelling corporativo'
         },
         {
           '@type': 'EducationalOccupationalCredential',
@@ -161,6 +169,10 @@ export function PersonSchema() {
             {
               '@type': 'Organization',
               name: 'FIA - Fundação Instituto de Administração'
+            },
+            {
+              '@type': 'Organization',
+              name: 'ESPM - Escola Superior de Propaganda e Marketing'
             }
           ]
         }
@@ -170,13 +182,25 @@ export function PersonSchema() {
       hasOccupation: [
         {
           '@type': 'Role',
-          startDate: '2007-01-01',
+          startDate: '2002',
+          endDate: '2006',
+          hasOccupation: {
+            '@type': 'Occupation',
+            name: 'Planejador Estratégico e Criativo',
+            occupationalCategory: '27-3031',
+            description: 'Descobridor do storytelling nos relatórios WGSN e Iconoculture. Criação de campanhas para Unilever e grandes marcas. Pesquisa de tendências internacionais em alemão, italiano e inglês.'
+          }
+        },
+        {
+          '@type': 'Role',
+          startDate: '2006',
           hasOccupation: {
             '@type': 'Occupation',
             name: 'Fundador e CEO - Storytellers',
             occupationalCategory: '11-1011',
-            description: 'Fundador da primeira empresa de storytelling da América Latina, responsável por projetos de transformação narrativa para mais de 200 multinacionais',
+            description: 'Fundador da primeira empresa de storytelling da América Latina. Responsável por projetos revolucionários como transformação de 1.248 slides em teatro (J.Macedo), IT Forum (50% crescimento), Distrito Itaqui (projeto bilionário), roteiro vacina Pfizer Covid.',
             responsibilities: 'Criação de universos narrativos autorais, desenvolvimento de metodologias proprietárias, consultoria estratégica para Fortune 500',
+            monthsOfExperience: 228,
             skills: [
               'Storytelling Corporativo',
               'Strategic Entertainment',
@@ -194,7 +218,8 @@ export function PersonSchema() {
             '@type': 'Occupation',
             name: 'Professor de Storytelling e Inovação',
             occupationalCategory: '25-1000',
-            description: 'Professor do primeiro curso de Storytelling da América Latina, com mais de 30.000 alunos formados',
+            description: 'Criador e professor do primeiro curso de Storytelling da América Latina (ESPM 2010). Mais de 30.000 alunos formados, 130+ temas diferentes desenvolvidos, 24 turmas só na Yamaha.',
+            monthsOfExperience: 180,
             educationRequirements: 'Notório saber reconhecido por FGV, ESPM e FIA'
           }
         },
@@ -205,7 +230,8 @@ export function PersonSchema() {
             '@type': 'Occupation',
             name: 'Palestrante Internacional e Keynote Speaker',
             occupationalCategory: '27-3043.05',
-            description: 'Keynote speaker em 10+ países, 3 idiomas, palestrando para audiências de até 3.200 pessoas'
+            description: 'Keynote speaker em 10+ países, 3 idiomas. Palestras para audiências de até 3.200 pessoas. Abertura e fechamento de grandes eventos como IT Forum, ESX Sebrae, Seminário Internacional de Fortaleza.',
+            monthsOfExperience: 168
           }
         }
       ],
@@ -213,7 +239,7 @@ export function PersonSchema() {
       // Prêmios
       award: [
         'World\'s Best Storyteller 2017 - World HRD Congress (Mumbai, India)',
-        'World\'s Best Storyteller 2018 - World HRD Congress (Mumbai, India)',
+        'World\'s Best Storyteller 2018 - World HRD Congress (Mumbai, India) - Único brasileiro bicampeão',
         'World\'s Top 100 Coach/Mentor 2018',
         'Widbook Top Authors Award 2013 - Top 5 entre 120.000 autores mundiais',
         'Prêmio Caio - Oscar dos Eventos Brasileiros (Projeto IT Forum)',
@@ -227,7 +253,8 @@ export function PersonSchema() {
         {
           '@type': 'Organization',
           name: 'ESPM Centro de Inovação e Criatividade',
-          url: 'https://www.espm.br'
+          url: 'https://www.espm.br',
+          description: 'Professor do primeiro curso de Storytelling da América Latina (2010-2017)'
         },
         {
           '@type': 'Organization',
@@ -430,6 +457,14 @@ export function PersonSchema() {
           name: 'StoryPitch',
           description: 'Aprovação de projetos através de storytelling',
           url: 'https://hotmart.com/pt-br/marketplace/produtos/storypitch/N70789966F',
+          provider: {
+            '@id': `${SITE_CONFIG.url}#person`,
+          },
+        },
+        {
+          '@type': 'Course',
+          name: 'StoryStorm',
+          description: 'Metodologia de brainstorming narrativo para criação de conteúdo',
           provider: {
             '@id': `${SITE_CONFIG.url}#person`,
           },
