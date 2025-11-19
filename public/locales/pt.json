@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "method": "Método",
+    "cases": "Casos",
+    "blog": "Blog",
+    "contact": "Contato"
+  },
+  "hero": {
+    "headline": "De 1.248 slides ignorados<br/>Para 1 teatro aplaudido de pé",
+    "subtitle": "Fernando Palacios • 2x World's Best Storyteller",
+    "description": "O único brasileiro que transformou PowerPoint em ovação"
+  },
+  "products": {
+    "talkDeMidas": {
+      "name": "Talk de Midas",
+      "tagline": "Transforme palestrantes em oradores magnéticos",
+      "category": "CORPORATIVO"
+    },
+    "storyStorm": {
+      "name": "Story Storm",
+      "tagline": "Narrativas que faturam milhões",
+      "category": "AGÊNCIA"
+    },
+    "curso": {
+      "name": "Para Não Criativos",
+      "tagline": "10k → 100k seguidores em 60 dias",
+      "category": "CURSO ONLINE"
+    }
+  },
+  "stats": {
+    "followers": "Seguidores Instagram",
+    "trained": "Treinados em 10 países",
+    "cLevels": "C-levels formados",
+    "awards": "World's Best Storyteller"
+  },
+  "cta": {
+    "learnMore": "Saiba Mais",
+    "contact": "Entre em Contato",
+    "discoverArchetype": "Descubra seu arquétipo narrativo"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "products": "Produtos",
+    "company": "Empresa",
+    "follow": "Siga"
+  }
+}
