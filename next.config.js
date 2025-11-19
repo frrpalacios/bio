@@ -1,10 +1,22 @@
 const createNextIntlPlugin = require('next-intl/plugin');
+const createMDX = require('@next/mdx');
 
 const withNextIntl = createNextIntlPlugin();
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  
+  // Suporte para MDX
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 
   // Headers para segurança e SEO
   async headers() {
@@ -84,4 +96,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withNextIntl(nextConfig)
+module.exports = withNextIntl(withMDX(nextConfig))
