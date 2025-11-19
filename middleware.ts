@@ -1,12 +1,11 @@
 import createMiddleware from 'next-intl/middleware'
-import { LOCALES, DEFAULT_LOCALE } from './src/lib/constants'
 
 export default createMiddleware({
   // Lista de locales suportados
-  locales: LOCALES,
+  locales: ['pt', 'en', 'es'],
 
   // Locale padrão
-  defaultLocale: DEFAULT_LOCALE,
+  defaultLocale: 'pt',
 
   // Desabilita detecção automática para controle manual (melhor SEO)
   localeDetection: false,
