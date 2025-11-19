@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FAF8F6"/>
+
+  <!-- Gradient accent -->
+  <circle cx="200" cy="150" r="300" fill="#D4AF37" opacity="0.1"/>
+  <circle cx="1000" cy="480" r="400" fill="#87A96B" opacity="0.1"/>
+
+  <!-- Logo -->
+  <rect x="80" y="80" width="120" height="120" rx="15" fill="#D4AF37"/>
+  <text x="140" y="165" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="#18181F" text-anchor="middle">FP</text>
+
+  <!-- Main text -->
+  <text x="600" y="260" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#18181F" text-anchor="middle">Fernando Palacios</text>
+  <text x="600" y="340" font-family="Arial, sans-serif" font-size="36" fill="#40404C" text-anchor="middle">2x World's Best Storyteller</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="32" fill="#6F6F7C" text-anchor="middle">Showrunner | Entretenimento Estratégico</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="590" width="1200" height="40" fill="#D4AF37"/>
+</svg>

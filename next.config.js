@@ -3,12 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  i18n: {
-    locales: ['pt', 'en', 'es'],
-    defaultLocale: 'pt',
-    localeDetection: false, // Controle manual para melhor SEO
-  },
-
   // Headers para segurança e SEO
   async headers() {
     return [
@@ -57,7 +51,6 @@ const nextConfig = {
 
   // Experimental features para performance
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
 

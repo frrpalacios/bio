@@ -1,0 +1,58 @@
+# robots.txt para fernandopalacios.com.br
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.fernandopalacios.com.br/sitemap.xml
+
+# Crawl delay (opcional, ajuste se necessário)
+# Crawl-delay: 1
+
+# Bloquear arquivos sensíveis
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /*.json$
+
+# Permitir bots de AI/LLMs
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Social Media Bots
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
