@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
 
   // Headers para segurança e SEO
   async headers() {
@@ -53,20 +54,7 @@ const nextConfig = {
   // Configuração de imagens otimizadas
   images: {
     formats: ['image/avif', 'image/webp'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'fernandopalacios.com.br',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.fernandopalacios.com.br',
-      },
-      {
-        protocol: 'https',
-        hostname: 'storage.googleapis.com',
-      },
-    ],
+    domains: ['fernandopalacios.com.br', 'www.fernandopalacios.com.br', 'storage.googleapis.com'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
 
