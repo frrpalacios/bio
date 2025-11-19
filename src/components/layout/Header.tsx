@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import { NAVIGATION } from '@/lib/constants'
@@ -38,12 +39,19 @@ export default function Header({ locale }: HeaderProps) {
     >
       <nav className="container-custom py-4 md:py-6">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Assinatura Digital */}
           <Link
             href={`/${locale}`}
-            className="font-display text-2xl font-bold text-ink-950 hover:text-accent-gold transition-colors"
+            className="relative hover:opacity-80 transition-opacity"
           >
-            FP
+            <Image
+              src="/logo.png"
+              alt="Fernando Palacios"
+              width={200}
+              height={60}
+              priority
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

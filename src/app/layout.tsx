@@ -78,6 +78,16 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-64.png', sizes: '64x64', type: 'image/png' },
+      { url: '/favicon-128.png', sizes: '128x128', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicon-128.png', sizes: '128x128', type: 'image/png' },
+    ],
+  },
 }
 
 export default function RootLayout({
