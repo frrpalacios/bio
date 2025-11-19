@@ -4,11 +4,14 @@ import StatsSection from '@/components/sections/StatsSection'
 import SocialProofSection from '@/components/sections/SocialProofSection'
 import CTASection from '@/components/sections/CTASection'
 
-export default function HomePage({
-  params: { locale },
+export const dynamic = 'force-dynamic'
+
+export default async function HomePage({
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   return (
     <>
       <HeroSection locale={locale} />

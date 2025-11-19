@@ -1,13 +1,11 @@
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-
-  i18n: {
-    locales: ['pt', 'en', 'es'],
-    defaultLocale: 'pt',
-    localeDetection: false, // Controle manual para melhor SEO
-  },
 
   // Headers para segurança e SEO
   async headers() {
@@ -37,13 +35,18 @@ const nextConfig = {
     return [
       {
         source: '/fernando-palacios',
-        destination: '/',
+        destination: '/pt',
         permanent: true
       },
       {
         source: '/storytelling',
-        destination: '/metodo',
+        destination: '/pt/metodo',
         permanent: true
+      },
+      {
+        source: '/',
+        destination: '/pt',
+        permanent: false
       }
     ]
   },
@@ -69,4 +72,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig)
