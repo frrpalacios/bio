@@ -59,6 +59,17 @@ export function PersonSchemaES() {
         'https://cursos.storytellers.com.br/p/fernando-palacios.html',
         'https://hotmart.com/pt-br/marketplace/produtos/storypitch/N70789966F',
         'https://escritorerrante.wordpress.com',
+        'https://www.radiogazetaonline.com.br/storytelling-como-as-marcas-contam-historias/',
+        'https://casperlibero.edu.br/noticias/edicao-extra-de-fevereiro-aborda-seo-storytelling-e-as-novas-formas-de-consumir-literatura/',
+        'https://www.youtube.com/playlist?list=PLN-jMX82ANNxGtIGG6MOtnIIIbg5TeGV2',
+        'https://incultec.ufop.br/event/palestra',
+        'https://adop.org.br/noticia/170/marca-de-ouro-preto-ganha-portal-para-difuso-no-mercado-do-turismo?print=1',
+        'https://nextnow.meioemensagem.com.br/entretenimento-do-publico-para-o-publico/',
+        'https://altabooks.com.br/wp-content/uploads/2019/07/capitulo_de_amostra_Storytelling.pdf',
+        'https://puntoedu.pucp.edu.pe/opinion/el-storytelling-surgio-como-una-necesidad-de-captar-la-atencion-de-la-gente/',
+        'https://consumer-truth.com.pe/las-7-claves-del-planeamiento-de-marcas-basado-en-storytelling/',
+        'https://repositorio.ulisboa.pt/bitstream/10400.5/19105/1/Renard%20Campolina_Storytelling%20%28Final%29%20V4.pdf',
+        'https://esead.github.io/tecnologias-e-educacao-aberta-e-digital-vol-2/capitulo-18/',
         SITE_CONFIG.company.url
       ],
       
@@ -178,6 +189,16 @@ export function PersonSchemaES() {
         }
       ],
       
+      // Coautoría
+      colleague: [
+        {
+          '@type': 'Person',
+          name: 'Martha Terenzzo',
+          description: 'Coautora de \'La Guía Completa del Storytelling\' y coprofesora en ESPM',
+          sameAs: 'https://www.linkedin.com/in/marthaterenzzo/'
+        }
+      ],
+      
       // Ocupações
       hasOccupation: [
         {
@@ -191,6 +212,32 @@ export function PersonSchemaES() {
             description: 'Descubridor del storytelling en los informes WGSN e Iconoculture. Creación de campañas para Unilever y grandes marcas. Investigación de tendencias internacionales en alemán, italiano e inglés.'
           }
         },
+        {
+          '@type': 'Role',
+          startDate: '2004',
+          endDate: '2005',
+          hasOccupation: {
+            '@type': 'Occupation',
+            name: 'Planificador Estratégico',
+            occupationalCategory: '27-3031',
+            description: 'BFerraz - Refuerzo del departamento de planificación estratégica. Descubridor del storytelling en informes WGSN e Iconoculture. Creación de campañas para Unilever y grandes marcas.',
+            monthsOfExperience: 12
+          }
+        },
+
+        {
+          '@type': 'Role',
+          startDate: '2004',
+          endDate: '2005',
+          hasOccupation: {
+            '@type': 'Occupation',
+            name: 'Planificador Estratégico',
+            occupationalCategory: '27-3031',
+            description: 'BFerraz - Refuerzo del departamento de planificación estratégica. Descubridor del storytelling en informes WGSN e Iconoculture. Creación de campañas para Unilever y grandes marcas.',
+            monthsOfExperience: 12
+          }
+        },
+
         {
           '@type': 'Role',
           startDate: '2006',

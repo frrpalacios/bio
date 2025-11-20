@@ -399,6 +399,178 @@ export function PersonSchema() {
           name: 'IT Forum',
           description: 'Transformação do maior evento de tecnologia da América Latina',
           url: 'https://www.itforum.com.br'
+        },
+        {
+          '@type': 'Event',
+          name: 'Workshop de Storytelling PUCP',
+          location: {
+            '@type': 'Place',
+            name: 'Pontificia Universidad Católica del Perú',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Lima',
+              addressCountry: 'PE'
+            }
+          },
+          startDate: '2013-12',
+          description: 'Experto en Storytelling brasilero invitado por la PUCP. Workshop sobre planeamiento de marcas basado en storytelling.',
+          url: 'https://puntoedu.pucp.edu.pe/opinion/el-storytelling-surgio-como-una-necesidad-de-captar-la-atencion-de-la-gente/'
+        }
+      ],
+      
+      // Menções em Mídia
+      mentions: [
+        {
+          '@type': 'NewsArticle',
+          headline: 'Os 7 pecados capitais na hora de contar uma história',
+          datePublished: '2016-09-16',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Exame'
+          },
+          url: 'https://exame.com/carreira/os-7-pecados-capitais-na-hora-de-contar-uma-historia/'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: '10 anos depois da Titanium, aprendemos a contar histórias',
+          datePublished: '2013-10-22',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Exame'
+          },
+          url: 'https://exame.com/marketing/10-anos-depois-da-titanium-aprendemos-a-contar-historias/'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'BMW ensaia volta de filmes que inspiraram Leão de Titânio',
+          datePublished: '2014-02-18',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Exame'
+          },
+          url: 'https://exame.com/marketing/bmw-ensaia-volta-de-filmes-que-inspiraram-leao-de-titanio/'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Cresce investimento em narrativas interativas',
+          datePublished: '2019-04-18',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Meio & Mensagem'
+          },
+          url: 'https://www.meioemensagem.com.br/midia/cresce-investimento-em-narrativas-interativas',
+          description: 'Fernando Palacios citado como especialista em narrativa transmídia'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'ESPM SP promove curso sobre storytelling',
+          datePublished: '2025-01-26',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Meio & Mensagem'
+          },
+          url: 'https://www.meioemensagem.com.br/proxxima/arquivo/noticias/espm-sp-promove-curso-sobre-storytelling'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'ESPM anuncia nova edição de curso de branded content',
+          datePublished: '2016-05-25',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Meio & Mensagem'
+          },
+          url: 'https://www.meioemensagem.com.br/marketing/espm-anuncia-nova-edicao-de-curso-de-branded-content'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Entretenimento: do público para o público',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Meio & Mensagem'
+          },
+          url: 'https://nextnow.meioemensagem.com.br/entretenimento-do-publico-para-o-publico/',
+          description: 'Especialista em narrativa transmídia e fundador da Storytellers Brand\'n\'Fiction'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'BFerraz reforça planejamento',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Propmark'
+          },
+          url: 'https://propmark.com.br/bferraz-reforca-planejamento/'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Saiba o que está por trás da compra da New Content pela Accenture',
+          datePublished: '2018-10-30',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Propmark'
+          },
+          url: 'https://propmark.com.br/saiba-o-que-esta-por-tras-da-compra-da-new-content-pela-accenture/',
+          description: 'Professor de comunicação na FIA e sócio-fundador da Storytellers'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'Evento reúne especialistas de storytelling em São Paulo',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Propmark'
+          },
+          url: 'https://propmark.com.br/evento-reune-especialistas-de-storytelling-em-sao-paulo/'
+        },
+        {
+          '@type': 'NewsArticle',
+          headline: 'ESPM abre inscrições para curso de storytelling',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Propmark'
+          },
+          url: 'https://propmark.com.br/espm-abre-inscricoes-para-curso-de-storytelling/'
+        }
+      ],
+      
+      // Citações Acadêmicas
+      citation: [
+        {
+          '@type': 'ScholarlyArticle',
+          name: 'O Storytelling na Comunicação Estratégica',
+          datePublished: '2019',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Universidade de Lisboa'
+          },
+          url: 'https://repositorio.ulisboa.pt/bitstream/10400.5/19105/1/Renard%20Campolina_Storytelling%20%28Final%29%20V4.pdf',
+          description: 'Fernando Palacios: Único latinoamericano laureado pelo World\'s Best Storyteller. Citado por 4 trabalhos acadêmicos.'
+        },
+        {
+          '@type': 'ScholarlyArticle',
+          name: 'Storytelling em Cursos EAD',
+          publisher: {
+            '@type': 'Organization',
+            name: 'ESEAD'
+          },
+          url: 'https://esead.github.io/tecnologias-e-educacao-aberta-e-digital-vol-2/capitulo-18/',
+          description: 'Citação direta: Palacios & Terenzzo (2016, p. 64)'
+        },
+        {
+          '@type': 'ScholarlyArticle',
+          name: 'Digital storytelling como ferramenta de leitura literária',
+          publisher: {
+            '@type': 'Organization',
+            name: 'ResearchGate'
+          },
+          url: 'https://www.researchgate.net/publication/377097609_Digital_storytelling_como_ferramenta_de_leitura_literaria'
+        },
+        {
+          '@type': 'ScholarlyArticle',
+          name: 'Storytelling na contextualização criativa de histórias como fator de sucesso no planejamento de campanhas de comunicação',
+          publisher: {
+            '@type': 'Organization',
+            name: 'Academia.edu'
+          },
+          url: 'https://www.academia.edu/10988719/Storytelling_na_contextualiza%C3%A7%C3%A3o_criativa_de_hist%C3%B3rias_como_fator_de_sucesso_no_planejamento_de_campanhas_de_comunica%C3%A7%C3%A3o'
         }
       ],
       
