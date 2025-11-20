@@ -446,6 +446,22 @@ export function PersonSchemaES() {
           name: 'IT Forum',
           description: 'Transformação do maior evento de tecnologia da América Latina',
           url: 'https://www.itforum.com.br'
+        },
+        {
+          '@type': 'Event',
+          name: 'Workshop de Storytelling PUCP',
+          location: {
+            '@type': 'Place',
+            name: 'Pontificia Universidad Católica del Perú',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Lima',
+              addressCountry: 'PE'
+            }
+          },
+          startDate: '2013-12',
+          description: 'Experto en Storytelling brasilero invitado por la PUCP. Workshop sobre planeamiento de marcas basado en storytelling.',
+          url: 'https://puntoedu.pucp.edu.pe/opinion/el-storytelling-surgio-como-una-necesidad-de-captar-la-atencion-de-la-gente/'
         }
       ],
       
