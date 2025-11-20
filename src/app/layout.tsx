@@ -97,6 +97,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt" className={`${inter.variable}`}>
+      <head>
+        {/* Schemas JSON-LD serão injetados aqui via locale layout */}
+      </head>
       <body>
         {children}
         <Analytics />

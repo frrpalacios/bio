@@ -2,8 +2,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { LOCALES } from '@/lib/constants'
-import { PersonSchema } from '@/schemas/person'
-import { OrganizationSchema } from '@/schemas/organization'
+import { SchemaScript } from '@/components/seo/SchemaScript'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
@@ -29,15 +28,21 @@ export default async function LocaleLayout({
   const messages = await getMessages()
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <PersonSchema locale={locale} />
-      <OrganizationSchema />
-
-      <Header locale={locale} />
-      <main className="min-h-screen">
-        {children}
-      </main>
-      <Footer locale={locale} />
-    </NextIntlClientProvider>
+    <>
+      {/* 
+        Schemas JSON-LD renderizados no início do body
+        Next.js irá movê-los para o <head> automaticamente
+        durante a renderização estática (SSG)
+      */}
+      <SchemaScript locale={locale} />
+      
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <Header locale={locale} />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer locale={locale} />
+      </NextIntlClientProvider>
+    </>
   )
 }
