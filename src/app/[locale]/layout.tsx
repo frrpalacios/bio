@@ -30,7 +30,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <PersonSchema />
+      <PersonSchema locale={locale} />
       <OrganizationSchema />
 
       <Header locale={locale} />

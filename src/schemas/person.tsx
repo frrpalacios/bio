@@ -1,4 +1,12 @@
-export function PersonSchema() {
+import { PersonSchemaEN } from './person-en';
+import { PersonSchemaES } from './person-es';
+
+export function PersonSchema({ locale }: { locale?: string } = {}) {
+  // Se locale for EN ou ES, usar schemas específicos
+  if (locale === 'en') return <PersonSchemaEN />;
+  if (locale === 'es') return <PersonSchemaES />;
+  
+  // Schema PT (padrão)
   const schema = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
